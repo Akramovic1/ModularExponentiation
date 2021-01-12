@@ -7,11 +7,19 @@ prpgram which calculate ModularExponentiation in different ways and print their 
     * for i=0 to to n -1 { r = r * b}
     * r = r mod m
     * measure time of execution
+    
+![](images/Naive1.png)
+
+
 * Naive-2
   * Pseudo code:
     * r = 1
     * for i=0 to to n -1 { r = (r * b) mod m}
     * measure time of execution
+    
+![](images/Naive2.png)    
+    
+    
 * Modular Exponentiation-Iterative
   * Pseudo code:
     * r = 1
@@ -21,6 +29,10 @@ prpgram which calculate ModularExponentiation in different ways and print their 
     * shift n 1 bit to the right
     * b = (b*b) mod m
     * measure time of execution
+    
+ ![](images/fast1.png)     
+  
+    
  * Modular Exponentiation Recursive
    * Pseudo code:
      * result = 1
@@ -35,3 +47,7 @@ prpgram which calculate ModularExponentiation in different ways and print their 
      * r = (r * MDREC(b,n-1,m) mod m ) mod m
      * measure time of execution
      * return (r+m) mod m
+
+ ![](images/fast2.png)     
+
+
