@@ -22,16 +22,16 @@ prpgram which calculate ModularExponentiation in different ways and print their 
     * b = (b*b) mod m
     * measure time of execution
  * Modular Exponentiation Recursive
-  * Pseudo code:
-    * result = 1
-    * base case
-    * if b == 0 {return 0}
-    * if n == 0 {return 1}
-    * if n is even number
-    * r = MDREC(b,n/2,m)
-    * r = (r*r) mod m
-    * if n is odd number
-    * r = b mod m
-    * r = (r * MDREC(b,n-1,m) mod m ) mod m
-    * measure time of execution
-    * return (r+m) mod m
+   * Pseudo code:
+     * result = 1
+     * base case
+     * if b == 0 {return 0}
+     * if n == 0 {return 1}
+     * if n is even number
+     * r = MDREC(b,n/2,m)
+     * r = (r*r) mod m
+     * if n is odd number
+     * r = b mod m
+     * r = (r * MDREC(b,n-1,m) mod m ) mod m
+     * measure time of execution
+     * return (r+m) mod m
